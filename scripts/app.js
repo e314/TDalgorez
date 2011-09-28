@@ -1,7 +1,7 @@
 $(function(){
   window.fbAsyncInit = function() {
     FB.init({
-      appId  : 'YOUR_APP_ID', 
+      appId  : '177655062312285', 
       status : true, 
       cookie : true,
       xfbml  : true
@@ -14,7 +14,7 @@ $(function(){
 
       FB.api('/me/friends', function(response){
         response.data.forEach(function(friend){
-          $('#friends').append('<div>'+JSON.stringify(friend)+'</div>');
+          $('#friends').append('<div>'+JSON.stringify(friend)+'test'+'</div>');
         });
       });
 
